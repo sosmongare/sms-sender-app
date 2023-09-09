@@ -34,11 +34,11 @@
         @endif
         <div class="form-group">
           <label for="mobilenumber">Mobile Number:</label>
-          <input type="tel" class="form-control" id="mobilenumber" name="mobilenumber" placeholder="Enter mobile number">
+          <input type="tel" class="form-control" id="mobilenumber" name="mobilenumber" value="{{ old('mobilenumber') }}" placeholder="Enter mobile number">
         </div>
         <div class="form-group">
           <label for="message">Message:</label>
-          <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          <textarea class="form-control" id="message" name="message" rows="5">{{ old('message') }}</textarea>
         </div>
         <button type="submit" class="btn btn-primary">Send Message</button>
 
